@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0a0a23;
+    color: white;
+    font-family: sans-serif;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    row-gap: 50px;
+}
+.freecodecamp-logo{
+    width: 250px;
+    text-align: center;
+}
+.title-palindrome {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.container-input{
+    background-color: white;
+    padding: 30px 60px;
+    border-radius: 20px;
+    box-shadow: 3px 4px 1px rgb(1, 1, 148);
+}
+label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: black;
+}
+.input-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#text-input{
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: #5a01a7;
+    width: 200px;
+    font-size: 24px;
+    padding-left: 10px;
+}
+#check-btn{
+    padding: 8px 16px;
+    background-color: #5a01a7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 14px;
+}
+.result-container p {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    margin: 15px auto 0 auto;
+    font-weight: 600;
+}
+
+.hint-container{
+    background-color: #00471b;
+    width: 430px;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+.hint{
+    font-size: 22px;
+}
+
+#alertBox{
+    position:absolute;
+    top:70px;
+    left:50%;
+    margin-left:-250px;
+    width:500px;
+    height: 200px;
+    text-align: center;
+    background-color: #660505f1;
+    padding: 20px;
+    font-size: 42px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: alertBox 1s 1 normal linear;
+}
+@keyframes alertBox{
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 35px;
+    }
+    100% {
+        top: 70px;
+    }
+}
+#alertClose{
+    position: absolute;
+    right:0;
+    top: 0;
+    background-color: black;
+    border: solid 1px white;
+    color: white;
+    width: 1em;
+    text-align: center; 
+    cursor: pointer;
+    font-size: 22px;
+}
